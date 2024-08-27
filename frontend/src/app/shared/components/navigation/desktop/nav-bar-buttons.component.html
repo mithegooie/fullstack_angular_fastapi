@@ -1,0 +1,9 @@
+<div class="nav-bar__buttons">
+    @if(isAuthenticated$ | async) {
+        <app-logout-button></app-logout-button>
+    }
+    @else {
+        <app-signup-button></app-signup-button>
+        <app-login-button></app-login-button>
+    }
+</div>
